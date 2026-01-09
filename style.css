@@ -255,46 +255,131 @@ footer {
     }
 
 }
-/* Мобильная адаптация */
-@media (max-width: 768px) {
+/* Мобильная адаптация - ТОЛЬКО для экранов меньше 768px */
+@media screen and (max-width: 768px) {
+  /* ===== ГЛАВНАЯ СТРАНИЦА (index.html) ===== */
+  
   /* Овальное фото */
   .my-photo {
-    max-width: 300px !important; /* или 60% для более гибкого размера */
+    max-width: 300px !important;
     width: 70% !important;
     height: auto !important;
     margin: 20px auto !important;
     display: block !important;
-    border-radius: 50% !important; /* если нужно сохранить овал */
+    border-radius: 50% !important;
   }
   
-  /* Заголовок */
+  /* Заголовок главной */
   header h1 {
     font-size: 24px !important;
-    text-align: center;
-    margin-top: 20px;
+    text-align: center !important;
+    margin-top: 20px !important;
   }
   
-  /* Подзаголовок */
+  /* Подзаголовок главной */
   header p {
     font-size: 16px !important;
-    text-align: center;
+    text-align: center !important;
   }
   
-  /* Кнопки */
+  /* Кнопки на главной */
   .buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    margin-top: 20px;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 10px !important;
+    margin-top: 20px !important;
   }
   
   .button {
     width: 80% !important;
-    max-width: 300px;
-    text-align: center;
-    padding: 12px;
-    font-size: 16px;
+    max-width: 300px !important;
+    text-align: center !important;
+    padding: 12px !important;
+    font-size: 16px !important;
+  }
+  
+  /* ===== СТРАНИЦА БЛОГА (blog.html) ===== */
+  
+  /* Блок статьи */
+  .blog-post {
+    margin: 20px auto !important;
+    padding: 15px !important;
+    max-width: 95% !important;
+  }
+  
+  /* Фото в блоге */
+  .blog-image img {
+    max-width: 100% !important;
+    height: auto !important;
+    border-radius: 12px !important;
+    margin: 0 auto 15px auto !important;
+    display: block !important;
+  }
+  
+  /* Заголовок статьи */
+  .blog-content h3 {
+    font-size: 22px !important;
+    margin: 10px 0 !important;
+    text-align: center !important;
+  }
+  
+  /* Дата статьи */
+  .blog-content .date {
+    font-size: 14px !important;
+    color: #666 !important;
+    text-align: center !important;
+    margin: 5px 0 15px 0 !important;
+  }
+  
+  /* Текст статьи */
+  .blog-content p {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    margin: 15px 0 !important;
+    text-align: justify !important;
+  }
+  
+  /* Кнопка "Читать дальше" */
+  .read-more {
+    display: block !important;
+    text-align: center !important;
+    margin: 20px auto !important;
+    padding: 12px 24px !important;
+    background: #2c3e50 !important;
+    color: white !important;
+    border-radius: 8px !important;
+    text-decoration: none !important;
+    max-width: 200px !important;
+  }
+  
+  /* Заголовок страницы блога */
+  header h1 {
+    font-size: 28px !important;
+    text-align: center !important;
+    margin: 20px 0 !important;
+  }
+  
+  /* Кнопка "На главную" в блоге */
+  header .button {
+    display: block !important;
+    margin: 10px auto !important;
+    max-width: 200px !important;
+    text-align: center !important;
+  }
+  
+  /* ===== ОБЩИЕ СТИЛИ ДЛЯ ВСЕХ СТРАНИЦ ===== */
+  
+  /* Все остальные изображения */
+  img:not(.my-photo) {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  
+  /* Контейнеры */
+  main, section, article {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
   }
 }
 
