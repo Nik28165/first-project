@@ -297,14 +297,6 @@ footer {
     font-size: 16px;
   }
 }
-/* Добавьте этот код ПОСЛЕ всего остального в @media */
-header img.my-photo,
-header > img.my-photo,
-img.my-photo[src*="my-photo"] {
-  max-width: 320px !important;
-  width: 80% !important;
-  height: auto !important;
-  margin: 30px auto !important;
-}
+
 
 
