@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои Проекты | Юлиана Борисова</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🎨 Мои Проекты</h1>
+        <a href="index.html" class="button">← На главную</a>
+    </header>
+    
+    <main>
+    <section class="projects-section">
+        <h2>🎪 Фестивали</h2>
+        <p class="section-description">Организация и проведение детских кинофестивалей</p>
+        
+        <div class="gallery">
+            <img src="images/fest3.png" alt="Фестиваль 2024"> 
+<p class="section-description">Det-kinofest.ru</p>			
+        </div>
+    </section>
+
+    <section class="projects-section">
+       <h2>🎬 Продюсирование</h2>
+<p class="section-description">Производство музыкального контента и артист-менеджмент</p>
+
+<div class="video-container" style="
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 40px;
+">
+    <!-- ТОЛЬКО ОДИН КЛИП -->
+    <div class="video-preview" 
+         onclick="window.open('https://rutube.ru/video/b373cef3b49dcf4c307778e0b9138560', '_blank')"
+         style="
+            width: 300px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+         "
+         onmouseover="this.style.transform='translateY(-5px)'"
+         onmouseout="this.style.transform='translateY(0)'">
+        
+        <!-- Контейнер для фото -->
+        <div class="video-thumb-container" style="
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 15px;
+            width: 300px;
+            height: 220px;
+        ">
+            <!-- Фото -->
+            <img src="images/video-thumb1.png" 
+                 alt="Мисс Грей" 
+                 style="
+                    width: 300px !important;
+                    height: 220px !important;
+                    object-fit: cover !important;
+                    display: block !important;
+                    border-radius: 12px;
+                 ">
+            
+            <!-- Кнопка поверх -->
+            <div class="play-overlay" style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,0.5);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+                border-radius: 12px;
+            "
+            onmouseover="this.style.opacity='1'"
+            onmouseout="this.style.opacity='0'">
+                <div class="play-btn" style="
+                    background: #3498db;
+                    color: white;
+                    padding: 12px 25px;
+                    border-radius: 30px;
+                    font-weight: bold;
+                    font-size: 16px;
+                ">▶ Смотреть клип</div>
+            </div>
+        </div>
+        
+        <!-- Информация -->
+        <div class="video-info" style="
+            text-align: left;
+            padding: 0 5px;
+        ">
+            <h4 style="
+                margin: 0 0 8px 0;
+                font-size: 18px;
+                color: #2c3e50;
+            ">«Мисс Грей»</h4>
+            <p style="
+                margin: 0;
+                color: #7f8c8d;
+                font-size: 14px;
+            ">Исполнитель: Алекс Некрасов · Год: 2020</p>
+        </div>
+    </div>
+    <!-- КОНЕЦ КЛИПА -->
+</div>
+    
+    
+<script>
+// Специальная функция для Rutube
+function openRutubeVideo(videoId) {
+    const embedUrl = `https://rutube.ru/play/embed/${videoId}`;
+    document.getElementById('videoPlayer').src = embedUrl;
+    document.getElementById('videoModal').style.display = 'block';
+}
+</script>
+                       
+        </div>
+    </section>
+
+    <section class="projects-section">
+        <h2>🎥 Кинопроизводство</h2>
+        <p class="section-description">Работа над художественными и документальными фильмами</p>
+        
+        <div class="gallery">
+            <img src="images/Kino.png" alt="Съёмки фильма">
+            
+        </div>
+    </section>
+
+    <section class="projects-section">
+        <h2>📹 Видеоклипы</h2>
+<p class="section-description">Создание музыкальных видео и визуального контента</p>
+
+<div class="video-container" style="
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 40px;
+">
+    <!-- КЛИП -->
+    <div class="video-preview" 
+         onclick="window.open('https://rutube.ru/video/85f5d0711959d83f5d33db8d76456155', '_blank')"
+         style="
+            width: 300px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+         "
+         onmouseover="this.style.transform='translateY(-5px)'"
+         onmouseout="this.style.transform='translateY(0)'">
+        
+        <!-- Контейнер для фото -->
+        <div class="video-thumb-container" style="
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 15px;
+            width: 300px;
+            height: 220px;
+        ">
+            <!-- Фото -->
+            <img src="images/video-thumb2.png" 
+                 alt="Видеоклип" 
+                 style="
+                    width: 300px !important;
+                    height: 220px !important;
+                    object-fit: cover !important;
+                    display: block !important;
+                    border-radius: 12px;
+                 ">
+            
+            <!-- Кнопка поверх -->
+            <div class="play-overlay" style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,0.5);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+                border-radius: 12px;
+            "
+            onmouseover="this.style.opacity='1'"
+            onmouseout="this.style.opacity='0'">
+                <div class="play-btn" style="
+                    background: #3498db;
+                    color: white;
+                    padding: 12px 25px;
+                    border-radius: 30px;
+                    font-weight: bold;
+                    font-size: 16px;
+                ">▶ Смотреть клип</div>
+            </div>
+        </div>
+        
+        <!-- Информация -->
+        <div class="video-info" style="
+            text-align: left;
+            padding: 0 5px;
+        ">
+            <h4 style="
+                margin: 0 0 8px 0;
+                font-size: 18px;
+                color: #2c3e50;
+            ">«Все ещё придёт»</h4>
+            <p style="
+                margin: 0;
+                color: #7f8c8d;
+                font-size: 14px;
+            ">Исполнитель: Алекс Некрасов · Год: 2022</p>
+        </div>
+    </div>
+    <!-- КОНЕЦ КЛИПА -->
+</div>
+    </section>
+
+    <section class="projects-section">
+        <h2>🎤 Концерты</h2>
+        <p class="section-description">Организация живых выступлений и туров</p>
+        
+        <div class="gallery">
+            <img src="images/Koncert.png" alt="Стадионный концерт">
+            
+        </div>
+    </section>
+
+     </main>
+
+
+    
+    <footer>
+        <p>© 2024 Юлиана Борисова. Все права защищены.</p>
+    </footer>
+</body>
+</html>
