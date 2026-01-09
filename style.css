@@ -299,13 +299,22 @@ footer {
     font-size: 16px !important;
   }
   
-  /* ===== СТРАНИЦА БЛОГА (blog.html) ===== */
+   /* ===== СТРАНИЦА БЛОГА (blog.html) ===== */
   
-  /* Блок статьи */
+  /* Блок статьи - меняем структуру для мобильных */
   .blog-post {
+    display: flex !important;
+    flex-direction: column !important;
     margin: 20px auto !important;
     padding: 15px !important;
     max-width: 95% !important;
+  }
+  
+  /* Контейнер для фото - ставим ПЕРВЫМ */
+  .blog-image {
+    order: 1 !important;
+    width: 100% !important;
+    margin-bottom: 15px !important;
   }
   
   /* Фото в блоге */
@@ -313,8 +322,15 @@ footer {
     max-width: 100% !important;
     height: auto !important;
     border-radius: 12px !important;
-    margin: 0 auto 15px auto !important;
+    margin: 0 auto !important;
     display: block !important;
+  }
+  
+  /* Контейнер для текста - ставим ВТОРЫМ */
+  .blog-content {
+    order: 2 !important;
+    width: 100% !important;
+    padding: 0 10px !important;
   }
   
   /* Заголовок статьи */
@@ -382,6 +398,7 @@ footer {
     overflow-x: hidden !important;
   }
 }
+
 
 
 
