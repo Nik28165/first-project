@@ -253,4 +253,47 @@ footer {
         max-width: calc(50% - 10px); /* 2 в ряд */
         height: 130px;
     }
+
+}
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+  /* Овальное фото */
+  .my-photo {
+    max-width: 200px !important; /* или 60% для более гибкого размера */
+    width: 60% !important;
+    height: auto !important;
+    margin: 20px auto !important;
+    display: block !important;
+    border-radius: 50% !important; /* если нужно сохранить овал */
+  }
+  
+  /* Заголовок */
+  header h1 {
+    font-size: 24px !important;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Подзаголовок */
+  header p {
+    font-size: 16px !important;
+    text-align: center;
+  }
+  
+  /* Кнопки */
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .button {
+    width: 80% !important;
+    max-width: 300px;
+    text-align: center;
+    padding: 12px;
+    font-size: 16px;
+  }
 }
